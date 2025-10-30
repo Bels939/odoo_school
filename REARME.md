@@ -16,7 +16,7 @@
 - Зберігання історії візитів  
 - Список типів захворювань  
 - Демонстраційні дані для швидкого тестування  
-➡️ Детальніше: [hr_hospital/README.md](./hr_hospital/README.md)
+➡️ Детальніше: [hr_hospital/README.md](hr_hospital_/README.md)
 
 
 ---
