@@ -1,0 +1,16 @@
+<odoo noupdate="1">
+    <record id="hr_hospital_diseases_demo_1" model="hr.hospital.library.diseases">
+        <field name="name">Covid</field>
+        <field name="comment">Virus infection Covid 2019</field>
+    </record>
+
+    <record id="hr_hospital_diseases_demo_2" model="hr.hospital.library.diseases">
+        <field name="name">Flu</field>
+        <field name="comment">Virus infection Flu</field>
+    </record>
+
+    <record id="hr_hospital_diseases_demo_3" model="hr.hospital.library.diseases">
+        <field name="name">Measles</field>
+        <field name="comment">An acute viral disease with a very high degree of contagiousness</field>
+    </record>
+</odoo>

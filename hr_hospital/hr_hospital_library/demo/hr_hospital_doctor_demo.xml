@@ -1,0 +1,29 @@
+<odoo noupdate="1">
+
+    <record id="hr_hospital_doctor_demo_1" model="hr.hospital.library.doctor">
+        <field name="name">Harper Lee</field>
+        <field name="gender">Male</field>
+        <field name="specialisation">Ophthalmologist</field>
+        <field name="category">First</field>
+        <field name="age">25</field>
+        <field name="comment">Young doctor</field>
+    </record>
+
+    <record id="hr_hospital_doctor_demo_2" model="hr.hospital.library.doctor">
+        <field name="name">George Orwell</field>
+        <field name="gender">Male</field>
+        <field name="specialisation">Therapist</field>
+        <field name="category">Higher</field>
+        <field name="age">38</field>
+        <field name="comment">Lucky</field>
+    </record>
+
+    <record id="hr_hospital_doctor_demo_3" model="hr.hospital.library.doctor">
+        <field name="name">J.K. Rowling</field>
+        <field name="gender">Female</field>
+        <field name="specialisation">Neuropathologist</field>
+        <field name="category">Higher</field>
+        <field name="age">58</field>
+        <field name="comment">Very good doctor</field>
+    </record>
+</odoo>

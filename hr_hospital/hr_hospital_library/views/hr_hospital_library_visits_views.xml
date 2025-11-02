@@ -1,0 +1,51 @@
+<odoo>
+        <record id="hr_hospital_library_visits_tree" model="ir.ui.view">
+            <field name="name">hr.hospital.library.visits.tree</field>
+            <field name="model">hr.hospital.library.visits</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="doctor_id"/>
+                    <field name="patient_id"/>
+                    <field name="diseases_id"/>
+                    <field name="visit_date"/>
+                    <field name="comment"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="hr_hospital_library_visits_form" model="ir.ui.view">
+            <field name="name">hr.hospital.library.visits.form ()</field>
+            <field name="model">hr.hospital.library.visits</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header></header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="visit_date"/>
+                                <field name="comment"/>
+                            </group>
+                            <group>
+                                <field name="doctor_id"/>
+                                <field name="patient_id"/>
+                                <field name="diseases_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_hr_hospital_library_visits_window" model="ir.actions.act_window">
+            <field name="name">Visits</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.hospital.library.visits</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="hr_hospital_library_menu_visits"
+                  action="action_hr_hospital_library_visits_window"
+                  parent="hr_hospital_library_menu_catalog"
+                  name="Visits" sequence="400"/>
+
+</odoo>

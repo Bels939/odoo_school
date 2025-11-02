@@ -1,0 +1,43 @@
+<odoo>
+        <record id="hr_hospital_library_diseases_tree" model="ir.ui.view">
+            <field name="name">hr.hospital.library.diseases.tree</field>
+            <field name="model">hr.hospital.library.diseases</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="comment"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="hr_hospital_library_diseases_form" model="ir.ui.view">
+            <field name="name">hr.hospital.library.diseases.form ()</field>
+            <field name="model">hr.hospital.library.diseases</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header></header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="comment"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_hr_hospital_library_diseases_window" model="ir.actions.act_window">
+            <field name="name">Diseases</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.hospital.library.diseases</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="hr_hospital_library_menu_diseases"
+                  action="action_hr_hospital_library_diseases_window"
+                  parent="hr_hospital_library_menu_catalog"
+                  name="Diseases" sequence="500"/>
+
+</odoo>

@@ -1,0 +1,29 @@
+<odoo noupdate="1">
+
+    <record id="hr_hospital_patient_demo_1" model="hr.hospital.library.patient">
+        <field name="name">John Senna</field>
+        <field name="gender">Male</field>
+        <field name="diseases_id" ref="hr_hospital_diseases_demo_3"/>
+        <field name="adress">Kyiv, Bohdan Khmeltsky Street, Building 48A</field>
+        <field name="age">51</field>
+        <field name="comment">Brr</field>
+    </record>
+
+    <record id="hr_hospital_patient_demo_2" model="hr.hospital.library.patient">
+        <field name="name">George Michael</field>
+        <field name="gender">Male</field>
+        <field name="diseases_id" ref="hr_hospital_diseases_demo_2"/>
+        <field name="adress">Kiev, st. Mishugi, house 1, apartment 200</field>
+        <field name="age">48</field>
+        <field name="comment">Lucky</field>
+    </record>
+
+    <record id="hr_hospital_patient_demo_3" model="hr.hospital.library.patient">
+        <field name="name">Marina Vlady</field>
+        <field name="gender">Female</field>
+        <field name="diseases_id" ref="hr_hospital_diseases_demo_1"/>
+        <field name="adress">Kiev, st. Grigorenko, house 3, apartment 15</field>
+        <field name="age">21</field>
+        <field name="comment">Very good patient</field>
+    </record>
+</odoo>
